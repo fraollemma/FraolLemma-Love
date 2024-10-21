@@ -13,7 +13,7 @@ body{
 #header{
   height: 100vh;
   width: 100%;
-  background-image:url(image/img1.jpg) ;
+  background-color: color-mix(in sRGB, red 50%, blue 50%) ;
   background-size: cover;
   background-position: center;
 }
@@ -31,8 +31,8 @@ nav{
 
 .logo{
   border-radius: 15px ;
-  width: 150px;
-  height: 120px;
+  width: 200px;
+  height: 200px;
 }
 
 nav ul li{
@@ -126,4 +126,81 @@ nav ul li a:hover::after{
 }
 p{
   color: #ffffffcb;
+}
+
+.tab-titles{
+  display: flex;
+  margin: 20px 0 40px;
+
+}
+
+.tab-links{
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-links::after{
+  content:'';
+  width: 0;
+  height: 3px;
+  bottom: -3px;
+  background :#ff0000;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tab-links.active-link::after{
+  width: 50%;
+}
+
+.tab-c ul li{
+  list-style: none;
+  margin: 10px 0;
+}
+
+.tab-c ul li span{
+  color:#ff004f;
+  font-size: 14px;
+}
+
+.tab-c{
+  display: none;
+}
+
+.tab-c.active-tab{
+  display: block;
+}
+
+
+body {
+  background-color: rgb(106, 167, 187); /* Initial background color */
+  border: none;
+  padding: 20px 20px;
+  cursor:auto;
+  transition: background-color 0.001s ease; /* Smooth transition */
+}
+
+body:hover {
+  background-color: rgb(131, 48, 18); /* First hover color */
+}
+
+body:hover {
+  background-color: #ff5733; /* Second hover color */
+}
+
+body:hover {
+  background-color: #1a4758; /* Third hover color */
+}
+
+body:hover {
+  background-color: #196427; /* Fourth hover color */
+}
+
+body:hover {
+  background-color: #5733ff; /* Fifth hover color */
 }
